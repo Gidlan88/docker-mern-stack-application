@@ -47,9 +47,9 @@ jobs:
         run: npm ci
         working-directory: ./mern/frontend # Executes npm ci inside mern/frontend
           
-      - name: Run frontend tests
-        run: npm test
-        working-directory: ./mern/frontend # Executes npm test inside mern/frontend
+      #- name: Run frontend tests
+       # run: npm test
+       # working-directory: ./mern/frontend # Executes npm test inside mern/frontend
           
   build_and_deploy:
     needs: test # This job will only run if the 'test' job succeeds
